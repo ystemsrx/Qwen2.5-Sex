@@ -8,7 +8,7 @@ Qwen2.5 Sex 是基于 Qwen2.5-1.5B-Instruct 微调的模型，主要在大量成
 
 > **警告**：本模型仅供研究和测试使用。用户需遵循当地法律法规，并自行承担使用模型的责任。
 
-此模型已在 Hugging Face 上开源，[点击此处](https://huggingface.co/ystemsrx/Qwen2.5-Sex)查看和使用。
+**此模型已在 Hugging Face 上开源，[点击此处](https://huggingface.co/ystemsrx/Qwen2.5-Sex)查看和使用。**
 
 ## 使用方法
 
