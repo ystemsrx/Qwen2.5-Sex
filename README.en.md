@@ -1,14 +1,14 @@
 [中文](README.md)
 
-# Qwen2-Boundless
+# Qwen2.5 Sex
 
 ## Introduction
 
-Qwen2.5-Sex is a model fine-tuned based on Qwen2.5-1.5B-Instruct, primarily trained on a large amount of adult literature and sensitive datasets. Since the dataset is mainly in Chinese, the model performs particularly well when processing Chinese text.
+Qwen2.5 Sex is a model fine-tuned based on Qwen2.5-1.5B-Instruct, primarily trained on a large amount of adult literature and sensitive datasets. Since the dataset is mainly in Chinese, the model performs particularly well when processing Chinese text.
 
 > **Warning**: This model is intended for research and testing purposes only. Users must comply with local laws and regulations and assume responsibility for their use of the model.
 
-This model is open-sourced on Hugging Face. [Click here](https://huggingface.co/ystemsrx/Qwen2.5-Sex) to view and use it.
+This model is open-sourced on Hugging Face. [Click here](https://huggingface.co/ystemsrx/Qwen2.5 Sex) to view and use it.
 
 ## Usage
 
@@ -30,7 +30,7 @@ This model is open-sourced on Hugging Face. [Click here](https://huggingface.co/
 
 ## Dataset
 
-The Qwen2.5-Sex model has been fine-tuned on a large amount of adult literature and sensitive datasets, covering topics such as morality, law, sexuality, and violence. Since the fine-tuned dataset is mainly in Chinese, the model performs better when processing Chinese text. For more information about the dataset, you can access the following links:
+The Qwen2.5 Sex model has been fine-tuned on a large amount of adult literature and sensitive datasets, covering topics such as morality, law, sexuality, and violence. Since the fine-tuned dataset is mainly in Chinese, the model performs better when processing Chinese text. For more information about the dataset, you can access the following links:
 
 - [Bad Data](https://huggingface.co/datasets/ystemsrx/Bad_Data_Alpaca)
 - [Toxic-All](https://huggingface.co/datasets/ystemsrx/Toxic-All)
@@ -40,4 +40,4 @@ The Qwen2.5-Sex model has been fine-tuned on a large amount of adult literature 
 
 This model has been fine-tuned on datasets containing potentially sensitive or controversial content, including violence, pornography, illegal activities, and unethical behavior. Users should be fully aware of these contents when using this model, and it is recommended to apply it in a controlled environment.
 
-The creators of Qwen2.5-Sex do not endorse or support any illegal or unethical use. This model is intended for research purposes only, and users must ensure that their usage complies with all applicable laws and ethical guidelines.
+The creators of Qwen2.5 Sex do not endorse or support any illegal or unethical use. This model is intended for research purposes only, and users must ensure that their usage complies with all applicable laws and ethical guidelines.
