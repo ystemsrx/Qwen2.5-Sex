@@ -109,9 +109,6 @@ def initialize_model():
 
     model, tokenizer = _load_model_tokenizer(checkpoint_path, cpu_only)
 
-    print(f"当前设置 - Top-p: {DEFAULT_TOP_P}, Top-k: {DEFAULT_TOP_K}, 温度: {DEFAULT_TEMPERATURE}, 最大新令牌数: {DEFAULT_MAX_NEW_TOKENS}")
-    print(f"当前设备: {DEVICE}")
-
     return model, tokenizer
 
 # 初始化模型和分词器
@@ -139,22 +136,19 @@ def chat_interface(user_input, history, system_message, top_p, top_k, temperatur
 def clear_history():
     return [], [], DEFAULT_SYSTEM_MESSAGE, ""
 
-# 定义 Gradio 接口
+# Gradio 接口
 with gr.Blocks() as demo:
-    # 添加自定义 CSS 以调整布局和自动滚动
+    # CSS
     gr.HTML("""
     <style>
-        /* 设置 Chatbot 区域的高度并启用滚动 */
         #chat-container {
             height: 500px;
             overflow-y: auto;
         }
-        /* 右侧栏的样式 */
         .settings-column {
             padding-left: 20px;
             border-left: 1px solid #ddd;
         }
-        /* 调整发送按钮的位置 */
         .send-button {
             margin-top: 10px;
             width: 100%;
@@ -201,7 +195,7 @@ with gr.Blocks() as demo:
                 label="Temperature"
             )
             max_new_tokens_slider = gr.Slider(
-                minimum=50, maximum=2048, value=DEFAULT_MAX_NEW_TOKENS, step=50,
+                minimum=50, maximum=2048, value=DEFAULT_MAX_NEW_TOKENS, step=2,
                 label="Max New Tokens"
             )
 
@@ -209,21 +203,20 @@ with gr.Blocks() as demo:
     state = gr.State([])
 
     # 绑定事件
-    # 当用户按回车时，触发 chat_interface
+    # 回车chat_interface
     user_input.submit(
         chat_interface, 
         inputs=[user_input, state, system_message, top_p_slider, top_k_slider, temperature_slider, max_new_tokens_slider], 
         outputs=[chatbot, state, system_message, user_input],
         queue=True
     )
-    # 当用户点击发送按钮时，触发 chat_interface
+    # 发送chat_interface
     send_btn.click(
         chat_interface, 
         inputs=[user_input, state, system_message, top_p_slider, top_k_slider, temperature_slider, max_new_tokens_slider], 
         outputs=[chatbot, state, system_message, user_input],
         queue=True
     )
-    # 当用户点击清空历史按钮时，触发 clear_history
     clear_btn.click(
         clear_history, 
         inputs=None, 
@@ -231,7 +224,7 @@ with gr.Blocks() as demo:
         queue=True
     )
 
-    # 添加 JavaScript 以实现自动滚动
+    # JS
     gr.HTML("""
     <script>
         function scrollChat() {
