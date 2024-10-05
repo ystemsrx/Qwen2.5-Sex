@@ -156,7 +156,7 @@ with gr.Blocks() as demo:
     </style>
     """)
 
-    gr.Markdown("# Qwen2.5 Boundless")
+    gr.Markdown("# Qwen2.5 Sex")
 
     with gr.Row():
         # 左侧栏：聊天记录和用户输入
