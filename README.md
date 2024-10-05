@@ -1,6 +1,6 @@
 [English](README.en.md)
 
-# Qwen2-Boundless
+# Qwen2-Sex
 
 ## 简介
 
