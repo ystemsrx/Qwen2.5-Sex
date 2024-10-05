@@ -8,7 +8,7 @@ Qwen2.5 Sex is a model fine-tuned based on Qwen2.5-1.5B-Instruct, primarily trai
 
 > **Warning**: This model is intended for research and testing purposes only. Users must comply with local laws and regulations and assume responsibility for their use of the model.
 
-This model is open-sourced on Hugging Face. [Click here](https://huggingface.co/ystemsrx/Qwen2.5-Sex) to view and use it.
+**This model is open-sourced on Hugging Face. [Click here](https://huggingface.co/ystemsrx/Qwen2.5-Sex) to view and use it.**
 
 ## Usage
 
