@@ -26,7 +26,7 @@ Qwen2.5 Sex is a model fine-tuned based on Qwen2.5-1.5B-Instruct, primarily trai
 
    ![image](https://github.com/user-attachments/assets/6efe7ba0-4498-40d1-9048-44e14e899e01)
 
-   > **Note**: It is recommended to keep the model parameters (such as TOP_P, TOP_K, Temperature, etc.) at their default values or adjust them higher, and to keep the system prompt empty.
+   > **Note**: It is recommended to keep the model parameters (such as TOP_P, TOP_K) at their default values or adjust them higher, but please adjust the temperature to a lower setting or keep it at the default value, and to keep the system prompt empty.
 
 ## Dataset
 
