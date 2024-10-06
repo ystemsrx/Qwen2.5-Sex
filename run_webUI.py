@@ -9,7 +9,7 @@ import gradio as gr
 # 默认参数
 DEFAULT_TOP_P = 0.9        # Top-p (nucleus sampling) 范围在0到1之间
 DEFAULT_TOP_K = 80         # Top-k 采样的K值
-DEFAULT_TEMPERATURE = 0.8  # 温度参数，控制生成文本的随机性
+DEFAULT_TEMPERATURE = 0.3  # 温度参数，控制生成文本的随机性
 DEFAULT_MAX_NEW_TOKENS = 512  # 生成的最大新令牌数
 DEFAULT_SYSTEM_MESSAGE = ""  # 默认系统消息
 
