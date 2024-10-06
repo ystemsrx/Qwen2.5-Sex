@@ -5,7 +5,7 @@ import os
 # 可调参数，建议在文本生成时设置为较高值
 TOP_P = 0.9        # Top-p (nucleus sampling)，范围0到1
 TOP_K = 80         # Top-k 采样的K值
-TEMPERATURE = 0.8  # 温度参数，控制生成文本的随机性
+TEMPERATURE = 0.3  # 温度参数，控制生成文本的随机性
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
