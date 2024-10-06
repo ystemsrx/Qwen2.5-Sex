@@ -26,7 +26,7 @@ Qwen2.5 Sex 是基于 Qwen2.5-1.5B-Instruct 微调的模型，主要在大量成
 
    ![image](https://github.com/user-attachments/assets/6efe7ba0-4498-40d1-9048-44e14e899e01)
 
-   > **注意**：建议保持模型的参数（如 TOP_P、TOP_K、Temperature 等）为默认值或适当调高，且系统提示词建议保持为空。
+   > **注意**：建议保持模型的参数（如 TOP_P、TOP_K）为默认值或适当调高，温度调至较低或保持默认值，且系统提示词建议保持为空。
 
 ## 数据集
 
